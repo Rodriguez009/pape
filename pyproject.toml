@@ -1,0 +1,33 @@
+[project]
+name = "pape"
+version = "0.1.0"
+description = "Local CLI to manage arxiv papers (download PDFs, index metadata, search, open)."
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.9"
+authors = [{name = "yinfeng", email = "anyalike.yin@gmail.com"}]
+keywords = ["arxiv", "cli", "papers", "research", "macos"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "requests>=2.31",
+    "openpyxl>=3.1",
+    "scikit-learn>=1.3",
+    "urllib3<2",
+]
+
+[project.urls]
+Homepage = "https://github.com/<your-username>/pape"
+Issues = "https://github.com/<your-username>/pape/issues"
+
+[project.scripts]
+pape = "pape.cli:main"

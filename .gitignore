@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.pytest_cache/
+
+# Virtualenv (installed by install.sh)
+.venv/
+venv/
+
+# macOS
+.DS_Store
+
+# Editor / IDE
+.idea/
+.vscode/
+.claude/
+*.swp
+*.swo
+*~
+
+# Local user data (lives in ~/pape/, but guard against accidental commits)
+data/
+pdf/
+info.xlsx
