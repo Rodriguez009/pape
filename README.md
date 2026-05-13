@@ -7,7 +7,7 @@
 ## 安装
 
 ```bash
-git clone https://github.com/<your-username>/pape.git
+git clone https://github.com/Rodriguez009/pape.git
 cd pape
 bash install.sh
 ```
