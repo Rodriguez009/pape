@@ -15,10 +15,11 @@ bash install.sh
 `install.sh` 会：
 
 1. 在项目内创建 `.venv`（不污染系统 Python）
-2. 安装依赖：`arxiv`、`requests`、`openpyxl`、`scikit-learn`
-3. 创建 `~/pape/pdf/` 数据目录
-4. 在 `~/.local/bin/pape` 写入启动器
-5. 检查 `~/.local/bin` 是否在你的 `PATH` 中，未配置则给出提示
+2. 安装依赖：`requests`、`openpyxl`、`scikit-learn`、`urllib3<2`
+3. 把 `pape` 包以 editable 模式注册进 venv 的 site-packages（让 `pape` 命令在任意目录都能跑）
+4. 创建 `~/pape/pdf/` 数据目录
+5. 在 `~/.local/bin/pape` 写入启动器
+6. 检查 `~/.local/bin` 是否在你的 `PATH` 中，未配置则给出提示
 
 > 如果脚本提醒 PATH 未配置，把下面这行加到 `~/.zshrc` 然后重开终端：
 > ```bash
